@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'the-kynan-homepage.herokuapp.com',
     'www.the-kynan-homepage.online',
+    '127.0.0.1'
 ]
 
 
