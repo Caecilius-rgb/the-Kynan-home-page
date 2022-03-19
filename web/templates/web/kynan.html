@@ -1,0 +1,82 @@
+
+
+
+<!--CSS-->
+<style>
+    ul {
+    list-style-type : none;
+    margin : 0;
+    padding : 0;
+    overflow : hidden;
+    background-color : white;
+    border : 1px solid black;
+    }
+
+    li {
+        float : left;
+        border-right: 1px solid black;
+    }
+
+    li a {
+        display : block;
+        color : black;
+        text-align : center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+        background-color : #e0e0e0 ;
+    }
+    .kynantext {
+        padding-top: 300px;
+        text-align: center;
+    }
+    body{
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color: white;
+    }
+    div{
+    position:absolute;
+    transform:translate(-50%,-50%);
+    height:35px;
+    width:35px;
+    }
+    .pointer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        pointer-events: none;
+        box-sizing: border-box;
+    }
+</style>
+
+
+
+<!--HTML-->
+<html>
+    <head>
+        <title>PlsDoge</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href="/about">About</a> </li>
+            <li><a href="/kynan">Kynan</a> </li>
+        </ul> 
+    </body>
+        <div class="pointer">Kynan</div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            $(document).mousemove(function(e){
+                $('.pointer').css({left:e.pageX, top:e.pageY});
+            })
+        </script>
+    </body>
+</html>

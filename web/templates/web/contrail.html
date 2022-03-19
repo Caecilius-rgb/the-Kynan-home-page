@@ -1,0 +1,46 @@
+
+<!--Javascript-->
+<script>
+
+</script>
+
+
+
+<!--CSS-->
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        overflow: hidden;
+    }
+    .pointer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        pointer-events: none;
+        box-sizing: border-box;
+    }
+</style>
+
+
+
+<!--HTML-->
+<html>
+    <head>
+        <title>PlsDoge</title>
+    </head>
+    <body>
+        <div class="pointer">Kynan</div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            $(document).mousemove(function(e){
+                $('.pointer').css({left:e.pageX, top:e.pageY});
+            })
+        </script>
+    </body>
+</html>
