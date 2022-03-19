@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-oydw$k)_vw4@k!6!x*c6^doeh+^*jlzetpr&8+7+-x0ge-__l@
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    
     'the-kynan-homepage.herokuapp.com',
+    'www.the-kynan-homepage.online',
 ]
 
 
