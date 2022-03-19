@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-oydw$k)_vw4@k!6!x*c6^doeh+^*jlzetpr&8+7+-x0ge-__l@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    
+    'the-kynan-homepage.herokuapp.com',
+]
 
 
 # Application definition
