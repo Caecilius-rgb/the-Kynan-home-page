@@ -1,6 +1,9 @@
+{% load static %}
+
+
 <script>
     var MOGUS = new Audio ();
-    MOGUS.src = "/Amogos.mp3"
+    MOGUS.src = "/static/Amogos.mp3"
     function MOGUS_ON() {
         document.getElementById('hideaway').style.display='block';
         MOGUS.play()
@@ -94,6 +97,7 @@
 <html>
     <head>
         <title>The Kynan Homepage</title>
+        <link href="{% static 'Amogos.mp3' %}"
     </head>
     <body>
         <ul>
@@ -109,7 +113,7 @@
             })
         </script>
         <div class="parent" style="top:357px; left: 720px;">
-            <button onClick="MOGUS_ON(); setTimeout(MOGUS_OFF, 100)">MOGOS</button>
+            <button onClick="MOGUS_ON(); MOGUS.play(); setTimeout(MOGUS_OFF, 2000)">MOGOS</button>
         </div>
         <div id="hideaway" style="display:none; font-size: 300px; top: 15%; left: 15%">
             KYNAN
