@@ -7,3 +7,5 @@ def about(request):
 def kynan(request):
     return render(request, 'web/kynan.html')
 
+def secret(request):
+    return render(request, 'web/contrail.html')

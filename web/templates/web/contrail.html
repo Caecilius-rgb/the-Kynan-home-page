@@ -1,32 +1,48 @@
-
-<!--Javascript-->
+<!--FTB-->
 <script>
-
 </script>
-
-
 
 <!--CSS-->
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-        background: #fff;
-        overflow: hidden;
+    body{
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color: black;
     }
-    .pointer {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        pointer-events: none;
-        box-sizing: border-box;
+    ul {
+    list-style-type : none;
+    margin : 0;
+    padding : 0;
+    overflow : hidden;
+    background-color : black;
+    border : 1px solid #22f10e;
     }
-</style>
 
+    li {
+        float : left;
+        border-right: 1px solid #22f10e;
+    }
+
+    li a {
+        display : block;
+        color : #22f10e;
+        text-align : center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+        background-color : #272727 ;
+    }
+    .isletext {
+        padding-top: 300px;
+        text-align: center;
+        color: #22f10e;
+    }
+
+</style>
 
 
 <!--HTML-->
@@ -35,12 +51,19 @@
         <title>The Kynan Homepage</title>
     </head>
     <body>
-        <div class="pointer">Kynan</div>
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script type="text/javascript">
-            $(document).mousemove(function(e){
-                $('.pointer').css({left:e.pageX, top:e.pageY});
-            })
-        </script>
+        <ul>
+            <li><a href="/about">About</a> </li>
+            <li><a href="/kynan">Kynan</a> </li>
+            <li><a href="/MOGUS">FTB</a> </li>
+        </ul>
     </body>
+        <div class="isletext">
+            <pre>
+            The Pirate Isle is still uncharted territory
+            
+            perhaps we'll meet there...
+            
+            -Your friends, FTB
+            </pre>
+        </div>
 </html>
