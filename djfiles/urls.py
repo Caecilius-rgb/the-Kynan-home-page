@@ -21,6 +21,8 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('/', views.about, name="about"),
     path('about/', views.about, name="about"),
+    path('test/', views.about, name="about"),
     path('kynan/', views.kynan, name="kynan"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
