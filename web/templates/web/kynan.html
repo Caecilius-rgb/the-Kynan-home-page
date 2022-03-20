@@ -1,3 +1,14 @@
+<script>
+    var MOGUS = new Audio ();
+    MOGUS.src = "/Amogos.mp3"
+    function MOGUS_ON() {
+        document.getElementById('hideaway').style.display='block';
+        MOGUS.play()
+    }
+    function MOGUS_OFF() {
+        document.getElementById('hideaway').style.display='none';
+    }
+</script>
 
 
 
@@ -7,7 +18,7 @@
     list-style-type : none;
     margin : 0;
     padding : 0;
-    overflow : hidden;
+    overflow : hidden;  
     background-color : white;
     border : 1px solid black;
     }
@@ -57,22 +68,23 @@
         box-sizing: border-box;
     }
     .parent {
-    width: 200px;
-    height: 200px;
-    border: 2px solid green;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    box-sizing: border-box;
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+        position: absolute;
     }
     button {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    padding: 10px;
-    background: green;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        padding: 10px;
+        background: white;
     }
 </style>
 
@@ -96,8 +108,11 @@
                 $('.pointer').css({left:e.pageX, top:e.pageY});
             })
         </script>
-        <div class="parent">
-            <button>Start</button>
+        <div class="parent" style="top:357px; left: 720px;">
+            <button onClick="MOGUS_ON(); setTimeout(MOGUS_OFF, 100)">MOGUS</button>
+        </div>
+        <div id="hideaway" style="display:none; font-size: 300px; top: 15%; left: 15%">
+            KYNAN
         </div>
     </body>
 </html>
