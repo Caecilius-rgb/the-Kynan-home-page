@@ -9,3 +9,6 @@ def kynan(request):
 
 def secret(request):
     return render(request, 'web/contrail.html')
+
+def nope(request):
+    return render(request, 'web/no.html')
