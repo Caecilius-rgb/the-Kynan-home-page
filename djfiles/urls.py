@@ -25,9 +25,8 @@ urlpatterns = [
     path('about/', views.about, name="about"),
     path('test/', views.about, name="about"),
     path('kynan/', views.kynan, name="kynan"),
-    path('pirate/', views.secret, name="secret"),
+    path(':)/', views.secret, name="realsecret"),
+    path('secret/', views.secret2, name="secret")
     #path('kynan/', views.nope, name="nope"),
     #path('about/', views.nope, name="nope"),
-
-
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

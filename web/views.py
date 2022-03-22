@@ -12,3 +12,9 @@ def secret(request):
 
 def nope(request):
     return render(request, 'web/no.html')
+
+def my_404(request):
+    return render(request, 'web/404.html')
+
+def secret2(request):
+    return render (request, 'web/secret.html')
